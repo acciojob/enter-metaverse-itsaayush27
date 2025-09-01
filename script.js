@@ -1,8 +1,7 @@
-//your JS code here. If required.
 const status = document.getElementById("status");
 const enterBtn = document.getElementById("enterBtn");
 
-   enterBtn.addEventListener("click", () => {
-      // Change paragraph content into an <h1> with new text
-      status.outerHTML = "<h1 id='status'>Entered Metaverse</h1>";
-    });
+enterBtn.addEventListener("click", () => {
+  // Insert an <h1> inside the <p> with id="status"
+  status.innerHTML = "<h1>Entered Metaverse</h1>";
+});
